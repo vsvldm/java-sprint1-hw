@@ -66,13 +66,6 @@ class StepTracker {
             System.out.println("Количество сожженных килокалорий за месяц: " + converter.convertStepsToKilocalories(sumStep));
             System.out.println("Лучшая серия выполненной цели: " + monthData.bestSeries(goalByStepsPerDay));
             System.out.println();
-
-
-
-
-
-
-
         }
     }
 }
