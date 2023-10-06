@@ -17,13 +17,13 @@ class StepTracker {
     void addNewNumberStepsPerDay() {
         System.out.print("Введите номер месяца от 1 до 12: ");
         int month = sc.nextInt();
-        if (!(month > 0 && month <= 12)) {
+        if (month < 0 || month >= 12) {
             System.out.println("Ошибка ввода месяца! Попробуй еще раз!");
             return;
         }
         System.out.print("Введите день от 1 до 30: ");
         int day = sc.nextInt();
-        if (!(day > 0 && day <= 30)) {
+        if (day < 0 || day > 30) {
             System.out.println("Ошибка ввода дня! Попробуй еще раз! ");
             return;
         }
@@ -53,7 +53,7 @@ class StepTracker {
     void printStatistic() {
         System.out.print("Введите месяц, за который хотите посмотреть статистику: ");
         int month = sc.nextInt();
-        if (!(month > 0 && month <= 12)) {
+        if (month < 0 || month >= 12) {
             System.out.println("Ошибка ввода месяца! Попробуй еще раз!");
         } else {
             MonthData monthData = monthToData[month - 1];
